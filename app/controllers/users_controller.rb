@@ -8,7 +8,7 @@ class UsersController < ApplicationController
       redirect_to '/signup'
     end
 
-    byebug
+    #byebug
   end
 
   private

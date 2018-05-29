@@ -5,7 +5,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to '/home'
     else
-      redirect_to '/signup'
+      redirect_to '/users/new'
     end
 
     #byebug

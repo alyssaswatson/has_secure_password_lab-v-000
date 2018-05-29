@@ -6,6 +6,7 @@ class UsersController < ApplicationController
       redirect_to '/home'
     else
       redirect_to '/signup'
+    end
 
     byebug
   end

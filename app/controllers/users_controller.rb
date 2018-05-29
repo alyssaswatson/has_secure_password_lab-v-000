@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
   def create
+    @user = User.create(user_params)
     if [:user][:password] == [:user][:password_confirmation]
-      
+
     byebug
   end
 

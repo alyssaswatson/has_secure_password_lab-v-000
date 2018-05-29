@@ -4,6 +4,8 @@ class UsersController < ApplicationController
     if @user.password == @user.password_confirmation
       session[:user_id] = @user.id
       redirect_to '/home'
+    else
+      redirect_to '/signup'
 
     byebug
   end
